@@ -1,7 +1,9 @@
 import React, { Component } from 'react'
 import Img from 'react-image'
 import back from './background.jpeg'
+import { putParams } from '../../../../utils/tools/params'
 import './firstPage.scss'
+
 let $ = window.$
 class FirstPage extends Component {
   constructor(props) {
@@ -32,7 +34,7 @@ class FirstPage extends Component {
         data:{name:name,mobile:mobile},//这里不是json，是表单参数
         success:function(data){
           console.log(data);
-          alert('提交成功');
+          putParams('38372637','/second');
         },
         complete:function(XMLHttpRequest, textStatus){
           console.log('complete');

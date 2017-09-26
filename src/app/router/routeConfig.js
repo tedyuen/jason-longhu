@@ -1,6 +1,6 @@
 
 const routes = [
-  // require('./lazy/auth').default,
+  require('./lazy/secondPage').default,
   // // require('./lazy/demo').default,
   // require('./lazy/createvisit').default,
   // require('./lazy/task').default,
