@@ -1,0 +1,36 @@
+.first-page {
+  width:100%;
+  position: relative;
+  .back-img {
+    width:100vw;
+  }
+  .first-page-inner {
+    position: absolute;
+    top:86vw;
+    left:0px;
+    width:100vw;
+
+    .input-frame {
+      position: absolute;
+      width:50vw;
+      left:24vw;
+      input {
+        width:100%;
+        margin-bottom: 20px;
+        height:4vw;
+        padding: 10px;
+      }
+      .btn-submit {
+        background-color: #e45a8b;
+        width: 30vw;
+        height:40px;
+        line-height: 40px;
+        text-align: center;
+        margin: auto;
+        color:white;
+      }
+    }
+
+  }
+
+}
