@@ -34,13 +34,19 @@ class FirstPage extends Component {
         data:{name:name,mobile:mobile},//这里不是json，是表单参数
         success:function(data){
           console.log(data);
-          putParams('38372637','/second');
+          let json = JSON.parse(data)
+          if(json.code.trim() != ''){
+            putParams(json.code,'/second');
+          }else{
+            alert('提交出错')
+          }
         },
         complete:function(XMLHttpRequest, textStatus){
           console.log('complete');
         },
         error:function(){
           console.log('error');
+          alert('提交出错')
         }
       });
     }

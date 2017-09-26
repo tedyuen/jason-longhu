@@ -1,2 +1,2 @@
-// export const path = "/superstar"
-export const path = ""
+export const path = "/longhu"
+// export const path = ""

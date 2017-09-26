@@ -1,14 +1,34 @@
 import React, { Component } from 'react'
+import { getParams } from '../../../../utils/tools/params';
+import { connect } from 'react-redux';
+import Img from 'react-image'
+import back from '../../firstPage/container/background.jpeg'
+import '../../firstPage/container/firstPage.scss'
 
 class SecondPage extends Component {
 
   render() {
     return (
-      <div>
-        第二页
+      <div className="first-page">
+        <Img src={back} className="back-img"/>
+
+        <div className="first-page-inner">
+
+          <div className="inner-text">
+            抽奖码：{this.props.params}
+          </div>
+
+        </div>
       </div>
     )
   }
 }
 
-export default SecondPage
+const mapStateToProps = (state) => {
+  return {
+    params: getParams(state),
+  }
+}
+
+
+export default connect(mapStateToProps, null)(SecondPage)

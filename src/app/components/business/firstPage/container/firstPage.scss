@@ -9,11 +9,17 @@
     top:86vw;
     left:0px;
     width:100vw;
-
+    .inner-text {
+      color:white;
+      font-size: 7vw;
+      width: 100%;
+      text-align: center;
+    }
     .input-frame {
       position: absolute;
       width:50vw;
       left:24vw;
+
       input {
         width:100%;
         margin-bottom: 20px;
