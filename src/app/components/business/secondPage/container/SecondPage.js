@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { getParams } from '../../../../utils/tools/params';
 import { connect } from 'react-redux';
 import Img from 'react-image'
-import back from '../../firstPage/container/background.jpeg'
+import back from './background2.jpeg'
 import '../../firstPage/container/firstPage.scss'
 
 class SecondPage extends Component {

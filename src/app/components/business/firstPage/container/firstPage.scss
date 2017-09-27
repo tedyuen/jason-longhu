@@ -6,7 +6,7 @@
   }
   .first-page-inner {
     position: absolute;
-    top:86vw;
+    top:83vw;
     left:0px;
     width:100vw;
     .inner-text {
@@ -14,6 +14,7 @@
       font-size: 7vw;
       width: 100%;
       text-align: center;
+      margin-top: 10vw;
     }
     .input-frame {
       position: absolute;
@@ -22,9 +23,9 @@
 
       input {
         width:100%;
-        margin-bottom: 20px;
+        margin-bottom: 5vw;
         height:4vw;
-        padding: 10px;
+        padding: 5px;
       }
       .btn-submit {
         background-color: #e45a8b;
@@ -34,6 +35,11 @@
         text-align: center;
         margin: auto;
         color:white;
+      }
+      .btn-submit-img {
+        width:40vw;
+        margin-left: 5vw;
+        margin-top: -2vw;
       }
     }
 

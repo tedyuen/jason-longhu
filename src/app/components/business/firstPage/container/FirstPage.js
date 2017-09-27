@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import Img from 'react-image'
 import back from './background.jpeg'
+import submit from './submit.png'
 import { putParams } from '../../../../utils/tools/params'
 import './firstPage.scss'
 
@@ -69,8 +70,8 @@ class FirstPage extends Component {
               <input type="tel" ref="mobile" placeholder="手机号码"/>
             </div>
 
-            <div className="btn-submit" onClick={this.handleGoClick}>提交</div>
-
+            {/* <div className="btn-submit" onClick={this.handleGoClick}>提交</div> */}
+            <Img src={submit} className="btn-submit-img" onClick={this.handleGoClick}/>
           </div>
 
         </div>
